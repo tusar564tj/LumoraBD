@@ -20,7 +20,7 @@ function renderProducts(filter="All"){
   const list = filter==="All" ? products : products.filter(p=>p.category===filter);
   $("#productGrid").innerHTML = list.map(p=>`
     <article class="product-card">
-      <div class="product-img ${p.art}">${art(p.art)}</div>
+      <div class="product-img ${p.art}"><span class="product-badge">${p.id <= 4 ? "NEW" : "LUMORA PICK"}</span>${art(p.art)}</div>
       <button class="add-btn" onclick="addToCart(${p.id})" aria-label="Add ${p.name} to cart">+</button>
       <div class="product-info"><small>${p.category.toUpperCase()}</small><h3>${p.name}</h3><div class="price">${money(p.price)} <span class="old">${money(p.old)}</span></div></div>
     </article>`).join("");
