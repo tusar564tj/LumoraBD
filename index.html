@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumora — premium fashion, beauty, bags, jewelry and lifestyle essentials.">
+  <title>Lumora — Everyday Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">✨ Free delivery on orders over ৳2,000 · Cash on Delivery available</div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Lumora home">
+      <span class="brand-mark">L</span>
+      <span class="brand-name">LUMORA</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">🛒<span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">THE LUMORA EDIT · 2026</p>
+        <h1>Everyday,<br><em>elevated.</em></h1>
+        <p class="hero-copy">Discover refined fashion, beauty, bags, jewelry and lifestyle pieces selected to make everyday moments feel a little more special.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#shop">Shop Collection <span>→</span></a>
+          <a class="btn btn-ghost" href="#categories">Explore Categories</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Lumora featured collection">
+        <div class="glow"></div>
+        <div class="hero-card card-back"></div>
+        <div class="hero-card card-main">
+          <div class="bag-shape"></div>
+          <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+          <span class="art-label">LUMORA<br><small>NEW COLLECTION</small></span>
+        </div>
+        <div class="floating-tag">CURATED<br><b>WITH LOVE</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✦</span><b>Curated Quality</b><small>Selected with care</small></div>
+      <div><span>◇</span><b>Easy Shopping</b><small>Simple & secure</small></div>
+      <div><span>↗</span><b>Fast Delivery</b><small>Across Bangladesh</small></div>
+      <div><span>♡</span><b>Made for You</b><small>Everyday elegance</small></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <div><p class="eyebrow">SHOP YOUR MOOD</p><h2>Explore categories</h2></div>
+        <a href="#shop" class="text-link">View all →</a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card cat-fashion" data-category="Fashion"><span>01</span><strong>Fashion</strong><small>Modern essentials</small></button>
+        <button class="category-card cat-bags" data-category="Bags"><span>02</span><strong>Bags</strong><small>Carry your style</small></button>
+        <button class="category-card cat-beauty" data-category="Beauty"><span>03</span><strong>Beauty</strong><small>Everyday glow</small></button>
+        <button class="category-card cat-jewelry" data-category="Jewelry"><span>04</span><strong>Jewelry</strong><small>Little luxuries</small></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="shop">
+      <div class="section-head">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured products</h2></div>
+        <div class="filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Fashion">Fashion</button>
+          <button class="filter" data-filter="Bags">Bags</button>
+          <button class="filter" data-filter="Beauty">Beauty</button>
+          <button class="filter" data-filter="Jewelry">Jewelry</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo">
+      <div>
+        <p class="eyebrow">LUMORA MEMBER</p>
+        <h2>10% off your first order.</h2>
+        <p>Join our list for early access to new drops, special offers and style inspiration.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button class="btn btn-primary" type="submit">Join Lumora</button>
+      </form>
+    </section>
+
+    <section class="section story" id="about">
+      <div class="story-image">
+        <div class="story-orb"></div>
+        <span>LESS<br><em>BUT BETTER</em></span>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Style that feels like you.</h2>
+        <p>Lumora is a modern lifestyle store built around thoughtful choices. We bring together pieces that are beautiful, useful and easy to love.</p>
+        <p>From a statement bag to a small everyday accessory, our collection is designed to add a polished touch without trying too hard.</p>
+        <a class="btn btn-dark" href="#shop">Discover Lumora <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="section-head centered"><div><p class="eyebrow">THE LUMORA LOVE</p><h2>What shoppers say</h2></div></div>
+      <div class="review-grid">
+        <article><div class="stars">★★★★★</div><p>“Beautiful presentation and the product felt even better in person. The whole shopping experience was smooth.”</p><b>— Ayesha R.</b></article>
+        <article><div class="stars">★★★★★</div><p>“I love the clean style of Lumora. The pieces are easy to match and delivery was surprisingly quick.”</p><b>— Nabila S.</b></article>
+        <article><div class="stars">★★★★★</div><p>“The packaging was gorgeous. It felt like opening a little gift to myself.”</p><b>— Farin T.</b></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">L</span><span class="brand-name">LUMORA</span></a>
+        <p class="footer-copy">Everyday elegance, thoughtfully curated.</p>
+      </div>
+      <div><h4>Shop</h4><a href="#shop">All Products</a><a href="#categories">Categories</a><a href="#shop">New Arrivals</a></div>
+      <div><h4>Help</h4><a href="#contact">Contact</a><a href="#contact">Delivery</a><a href="#contact">Returns</a></div>
+      <div><h4>Follow</h4><a href="#" onclick="return false">Facebook</a><a href="#" onclick="return false">Instagram</a><a href="#" onclick="return false">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Lumora. All rights reserved.</span><span>Made with ✦ for modern shoppers.</span></div>
+  </footer>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="search-inner"><input id="searchInput" placeholder="Search Lumora products..." autofocus><button id="closeSearch">×</button></div>
+    <div id="searchResults"></div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head"><h3>Your cart</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your cart is empty.</p></div>
+    <div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">৳0</strong></div><button class="btn btn-primary full" id="checkoutBtn">Checkout</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
